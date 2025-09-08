@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f6f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-height: 60px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+/*------------------------------------------------------------------------------*/
+
+.mensaje {
+    color: black;
+    width: 35.5%;
+    margin: 43px;
+    margin-left: 30px;
+    margin-top: 49px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(179, 142, 93, 2);
+    color: #222;
+    display: block;
+    font-size: 16px;
+    border-width: 1px;
+    border: 1px solid rgb(179, 142, 93);
+}
+
+#background {
+    background: #c0a27a;
+    border-radius: 5px;
+    display: flex;
+}
+
+.mensaje p {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    text-shadow: 0 0px 0 #ffffff;
+}
+
+#icons {
+    width: 6.5%;
+    flex-shrink: 0;
+    /* evita que se reduzca el tamaño del ícono */
+}
+
+/*------------------------------------------------------------------------------*/
+
+.panel {
+    margin: 20px;
+    text-shadow: 0 0px 0 #ffffff;
+    box-shadow: 0 3px 5px 1px rgba(179, 142, 93, 2);
+    border: 1px solid rgb(179, 142, 93);
+}
+
+#panel1,
+#panel2 {
+    border-radius: 0.5rem;
+}
+
+.panel h2 {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to bottom, #fff1e0, #b39268);
+    color: #3e3e3e;
+    font-size: 14px;
+    border-radius: 6px 6px 0 0;
+    text-shadow: 0 0px 0 #ffffff;
+}
+
+.panel .contenido {
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, #f9f7f3, #f2ede7);
+    border-radius: 0 0 6px 6px;
+}
+
+
+.dato {
+    display: flex;
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.label {
+    font-weight: bold;
+    width: 80px;   /* ancho fijo para alinear */
+    text-align: right;
+    margin-right: 10px;
+    margin: 5px;
+}
+
+.valor {
+    flex: 1;
+    color: #3e3e3e;
+    margin: 5px;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+    .mensaje {
+        width: 90%;
+        margin: 15px auto;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .mensaje p {
+        font-size: 14px;
+    }
+
+    #icons {
+        width: 32px;
+        height: auto;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+}
